@@ -3,6 +3,7 @@
 Sistema de cadastro de usuários em Java com integração ao MySQL.
 
 🔧 Funcionalidades
+
 ->Interface gráfica com Swing (NetBeans)
 
 ->Operações CRUD (Criar, Ler, Atualizar e Deletar)
