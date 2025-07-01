@@ -33,7 +33,7 @@ public class telacores extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jScrollBar1 = new javax.swing.JScrollBar();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        BtnCadastrar = new javax.swing.JButton();
         Txtcor = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         Nome = new javax.swing.JLabel();
@@ -49,12 +49,12 @@ public class telacores extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 153));
 
-        jButton1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        jButton1.setText("Cadastrar ");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BtnCadastrar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnCadastrar.setText("Cadastrar ");
+        BtnCadastrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BtnCadastrarActionPerformed(evt);
             }
         });
 
@@ -98,7 +98,7 @@ public class telacores extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 179, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BtnCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(BtnConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(197, 197, 197))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -134,7 +134,7 @@ public class telacores extends javax.swing.JFrame {
                     .addComponent(TxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(40, 40, 40)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BtnCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnConsulta)
                 .addGap(153, 153, 153))
@@ -154,7 +154,7 @@ public class telacores extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BtnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCadastrarActionPerformed
         String Cor, Nome;
         int Senha = Integer.parseInt(new String(TxtSenha.getPassword()).trim());
         Cor = Txtcor.getText();
@@ -165,7 +165,7 @@ public class telacores extends javax.swing.JFrame {
         objetodto.setSenha(Senha);
         coresdao objetodao = new coresdao();
         objetodao.cadastrarCor(objetodto);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BtnCadastrarActionPerformed
 
     private void TxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNomeActionPerformed
         // TODO add your handling code here:
@@ -213,12 +213,12 @@ public class telacores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnCadastrar;
     private javax.swing.JButton BtnConsulta;
     private javax.swing.JLabel Nome;
     private javax.swing.JTextField TxtNome;
     private javax.swing.JPasswordField TxtSenha;
     private javax.swing.JTextField Txtcor;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
