@@ -45,7 +45,6 @@ public class teladeconsulta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
@@ -53,7 +52,6 @@ public class teladeconsulta extends javax.swing.JFrame {
         jLabel2.setText("id");
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Idade");
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
@@ -111,7 +109,7 @@ public class teladeconsulta extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(102, 153, 255));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("CONSULTAR ");
 
@@ -120,7 +118,7 @@ public class teladeconsulta extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(136, 136, 136)
+                .addGap(121, 121, 121)
                 .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -238,7 +236,6 @@ public class teladeconsulta extends javax.swing.JFrame {
       TxtId.setText("");
       TxtNome.setText("");
       TxtIdade.setText("");
-      JOptionPane.showMessageDialog(null, "erro");
       
       
     }//GEN-LAST:event_BtnAtualizarActionPerformed
@@ -256,7 +253,7 @@ public class teladeconsulta extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnDeletarActionPerformed
 
     private void BtnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnVoltarActionPerformed
-        teladecadastro objetoc = new teladecadastro();
+        teladelogin objetoc = new teladelogin();
         objetoc.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BtnVoltarActionPerformed
