@@ -16,12 +16,15 @@ public class registrocadastro {
     
     public void cadastrarusuario(cadastro objetodto){
         conn = new conexao().conexaoBD();
-        String sql = "Insert into cadastrousuario.usuarios (nome, senha, idade) values(?,?,?)";
+        String sql = "Insert into cadastrousuario.usuarios (nome, senha, idade, Email, telefone, cpf) values(?,?,?,?,?,?)";
         try{
             psmt = conn.prepareStatement(sql);
             psmt.setString(1, objetodto.getNome());
             psmt.setString(2, objetodto.getSenha());
             psmt.setInt(3, objetodto.getIdade());
+            psmt.setString(4, objetodto.getEmail());
+            psmt.setString(5, objetodto.getTelefone());
+            psmt.setString(6, objetodto.getCpf());
             psmt.execute();
             psmt.close();
             JOptionPane.showMessageDialog(null, "Usuario Cadastrado");

@@ -42,21 +42,29 @@ public class teladeconsulta extends javax.swing.JFrame {
         BtnDeletar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        TxtEmail = new javax.swing.JTextField();
+        TxtTelefone = new javax.swing.JFormattedTextField();
+        jLabel1 = new javax.swing.JLabel();
+        TxtCpf = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setText("id");
+        jLabel2.setText("id:");
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Idade");
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setText("Idade:");
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel4.setText("Nome");
+        jLabel4.setText("Nome:");
 
         TxtId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,7 +114,7 @@ public class teladeconsulta extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(102, 153, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 102));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
@@ -130,6 +138,21 @@ public class teladeconsulta extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
         );
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setText("Email:");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel7.setText("Telefone:");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setText("CPF:");
+
+        TxtCpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtCpfActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -141,17 +164,26 @@ public class teladeconsulta extends javax.swing.JFrame {
                         .addGap(65, 65, 65)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TxtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(44, 44, 44)
+                                .addComponent(TxtId, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TxtId, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(TxtTelefone, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+                                    .addComponent(TxtEmail)
+                                    .addComponent(TxtIdade)
+                                    .addComponent(TxtCpf, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -180,14 +212,26 @@ public class teladeconsulta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TxtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(BtnConsultar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(TxtEmail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(TxtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TxtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addGap(10, 10, 10)
+                .addComponent(BtnConsultar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnVoltar)
                     .addComponent(BtnAtualizar)
                     .addComponent(BtnDeletar))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -198,7 +242,7 @@ public class teladeconsulta extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -216,6 +260,9 @@ public class teladeconsulta extends javax.swing.JFrame {
     if (objetodto != null && objetodto.getNome() != null) {
         TxtNome.setText(objetodto.getNome());
         TxtIdade.setText(String.valueOf(objetodto.getIdade()));
+        TxtEmail.setText(String.valueOf(objetodto.getEmail()));
+        TxtTelefone.setText(String.valueOf(objetodto.getTelefone()));
+        TxtCpf.setText(String.valueOf(objetodto.getCpf()));
         }else{
         JOptionPane.showMessageDialog(null, "Erro nada encontrado");
             }  
@@ -223,19 +270,27 @@ public class teladeconsulta extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnConsultarActionPerformed
 
     private void BtnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAtualizarActionPerformed
-      String nome;
+      String nome, Email, Telefone, CPF;
       int idade = Integer.parseInt(TxtIdade.getText());
       int id = Integer.parseInt(TxtId.getText());
       nome = TxtNome.getText();
+      Email = TxtEmail.getText();
+      Telefone = TxtIdade.getText();
+      CPF = TxtCpf.getText();
       cadastro objetodto = new cadastro();
       objetodto.setNome(nome);
       objetodto.setIdade(idade);
       objetodto.setId(id);
+      objetodto.setEmail(Email);
+      objetodto.setTelefone(Telefone);
       atualizar objetodao = new atualizar();
       objetodao.AtualizarPagina(objetodto);
       TxtId.setText("");
       TxtNome.setText("");
       TxtIdade.setText("");
+      TxtEmail.setText("");
+      TxtTelefone.setText("");
+      TxtCpf.setText(" ");
       
       
     }//GEN-LAST:event_BtnAtualizarActionPerformed
@@ -249,6 +304,9 @@ public class teladeconsulta extends javax.swing.JFrame {
         TxtId.setText(" ");
         TxtNome.setText(" ");
         TxtIdade.setText(" ");
+        TxtEmail.setText(" ");
+        TxtTelefone.setText(" ");
+        TxtCpf.setText(" ");
         
     }//GEN-LAST:event_BtnDeletarActionPerformed
 
@@ -261,6 +319,10 @@ public class teladeconsulta extends javax.swing.JFrame {
     private void TxtIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtIdadeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtIdadeActionPerformed
+
+    private void TxtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCpfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCpfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,13 +364,19 @@ public class teladeconsulta extends javax.swing.JFrame {
     private javax.swing.JButton BtnConsultar;
     private javax.swing.JButton BtnDeletar;
     private javax.swing.JButton BtnVoltar;
+    private javax.swing.JFormattedTextField TxtCpf;
+    private javax.swing.JTextField TxtEmail;
     private javax.swing.JTextField TxtId;
     private javax.swing.JTextField TxtIdade;
     private javax.swing.JTextField TxtNome;
+    private javax.swing.JFormattedTextField TxtTelefone;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

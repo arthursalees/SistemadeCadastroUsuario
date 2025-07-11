@@ -27,6 +27,11 @@ public class consultar {
             if(rs.next()){
                 objetodto.setNome(rs.getString("Nome"));
                 objetodto.setIdade(rs.getInt("Idade"));
+                objetodto.setEmail(rs.getString("Email"));
+                objetodto.setTelefone(rs.getString("Telefone"));
+                objetodto.setCpf(rs.getString("CPF"));
+                
+                
             }else{
                 return null;
             }

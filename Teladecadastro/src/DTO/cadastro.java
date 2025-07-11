@@ -8,6 +8,49 @@ package DTO;
 public class cadastro {
 
     /**
+     * @return the cpf
+     */
+    public String getCpf() {
+        return cpf;
+    }
+
+    /**
+     * @param cpf the cpf to set
+     */
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    /**
+     * @return the telefone
+     */
+    public String getTelefone() {
+        return telefone;
+    }
+
+    /**
+     * @param telefone the telefone to set
+     */
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    /**
      * @return the senha
      */
     public String getSenha() {
@@ -66,7 +109,7 @@ public class cadastro {
     private String nome;
     private String senha;
     private int idade;
-
-
-    
+    private String email;
+    private String telefone;
+    private String cpf;
 }
